@@ -109,8 +109,8 @@ typedef enum TWIM_RESULT_enum {
 typedef struct TWI_Master {
 	TWI_t *interface;                  /*!< Pointer to what interface to use */
 	register8_t address;                            /*!< Slave address */
-	register8_t writeData[TWIM_WRITE_BUFFER_SIZE];  /*!< Data to write */
-	register8_t readData[TWIM_READ_BUFFER_SIZE];    /*!< Read data */
+	uint8_t writeData[TWIM_WRITE_BUFFER_SIZE];  /*!< Data to write */
+	uint8_t readData[TWIM_READ_BUFFER_SIZE];    /*!< Read data */
 	register8_t bytesToWrite;                       /*!< Number of bytes to write */
 	register8_t bytesToRead;                        /*!< Number of bytes to read */
 	register8_t bytesWritten;                       /*!< Number of bytes written */
