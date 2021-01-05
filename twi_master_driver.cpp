@@ -264,7 +264,9 @@ bool TWI_MasterWriteRead(TWI_MasterDriver_t *twi,
 			twi->interface->MASTER.ADDR = writeAddress;
 		}
 		return true;
-	} else {
+	}
+	else
+  {
 		return false;
 	}
 }
